@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthy Food Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 350px;
+      position: relative;
+    }
+
+    .login-container img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .login-container p {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-container button {
+      background-color: #28a745;
+      color: #fff;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .login-container button:hover {
+      background-color: #218838;
+    }
+
+    .login-container .terms {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .login-container .terms a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .login-container .terms a:hover {
+      text-decoration: underline;
+    }
+
+    /* Skip button styling */
+    .skip-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #007bff;
+    }
+
+    .skip-btn:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <a href="index2.html" class="skip-btn">Skip</a>
+    <img src="healthy-food-logo.png" alt="Healthy Food Logo">
+    <h2>Login to unlock awesome benefits</h2>
+    <p>
+      <strong>Personalized Offers</strong> · <strong>Loyalty Rewards</strong> · <strong>Easy Payments</strong>
+    </p>
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p class="terms">
+      By going forward you accept our <a href="FAQ.html">Terms & Conditions</a>
+    </p>
+  </div>
+</body>
+</html>

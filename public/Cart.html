@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js" type="text/javascript" defer></script>
+    <title>Order Summary</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <ul class="menu-items">
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="category.html">Category</a></li>
+        <li><a href="Food-Menu.html">Menu</a></li>
+        <li><a href="testimonial.html">Testimonial</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="Cart.html">Order</a></li>
+        <li><a href="Login.html">login</a></li>
+       
+      </ul>
+      <a href="index2.html" class="logo"><h1>Healthy Food</h1></a>
+    </div>
+  </nav>
+
+  
+
+    <header>
+        <h1 style="color: black;; margin: 2px;;">Your Order</h1>
+    </header>
+    <div id="cart">
+      <h2>Your Cart</h2>
+      <ul id="order-list"></ul>
+      <p id="total-price">Total: $0.00</p>
+      <button id="clear-cart">Clear Cart</button>
+      <button id="add-item"><a href="Food-Menu.html">Add Item</a></button> <!-- Optional, for demonstration -->
+  </div>
+  
+    <section id="order-details" class="container" >
+        <ul id="order-list">
+            <!-- Order items will be populated here -->
+        </ul>
+        <h2 id="total-price">Total: $0.00</h2>
+    </section>
+    <section id="payment-section">
+        <h2>Delivery Address</h2>
+        <div id="delivery-details">
+            <label for="delivery-name">Full Name:</label>
+            <input type="text" id="delivery-name" placeholder="John Doe" required>
+    
+            <label for="delivery-street">Street:</label>
+            <input type="text" id="delivery-street" placeholder="123 Main St" required>
+    
+            <label for="delivery-city">City:</label>
+            <input type="text" id="delivery-city" placeholder="City" required>
+    
+            <label for="delivery-state">State:</label>
+            <input type="text" id="delivery-state" placeholder="State" required>
+    
+            <label for="delivery-zip">Zip Code:</label>
+            <input type="text" id="delivery-zip" placeholder="12345" required>
+    
+            <label for="delivery-country">Country:</label>
+            <input type="text" id="delivery-country" placeholder="Country" required>
+        </div>
+    
+        <h2>Payment Method</h2>
+        <form id="payment-form">
+            <div class="payment-option">
+                <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                <label for="credit-card">Credit Card</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" id="paypal" name="payment-method" value="paypal">
+                <label for="paypal">PayPal</label>
+            </div>
+    
+            <!-- Credit Card Details -->
+            <div id="credit-card-details" class="payment-details-form">
+                <label for="cc-number">Credit Card Number:</label>
+                <input type="text" id="cc-number" name="cc-number" placeholder="Enter your card number" required>
+    
+                <label for="cc-expiry">Expiry Date:</label>
+                <input type="text" id="cc-expiry" name="cc-expiry" placeholder="MM/YY" required>
+    
+                <label for="cc-cvc">CVC:</label>
+                <input type="text" id="cc-cvc" name="cc-cvc" placeholder="CVC" required>
+            </div>
+    
+            <button type="submit" id="submit-payment">Complete Order</button>
+        </form>
+    </section>
+    
+    
+    
+
+    <footer class="footer">
+        <div class="footer-container container">
+            <ul class="footer-nav">
+                <li><a href="index2.html">Home</a></li>
+                <li><a href="testimonial.html">Features</a></li>
+                <li><a href="Food-Menu.html">Pricing</a></li>
+                <li><a href="FAQ.html">FAQs</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div class="footer-socials">
+                <a href="#" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fa fa-youtube"></i></a>
+            </div>
+            <p class="text-center">&copy; 2024 DeveloperGTM | All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+</html>
